@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+
+<script>
+alert("untuk menghitung luas bangun datar : persegi, persegi panjang, segitiga, jajar genjang ")
+var pilih = prompt("masukan nama bangun datar yang ingin anda hitung luasnya:")
+
+if(pilih==="persegi"){
+var sisi1=prompt("Masukan sisi:")
+var sisi2=prompt("Masukan sisi:")
+var hasil= sisi1*sisi2
+ document.write( "<b>persegi</b> <br>")
+ document.write( "sisi: ",  sisi1,"<br>")
+ document.write( "sisi:", sisi2,"<br>")
+ document.write( "Hasil Menghitung L=s x s=" ,hasil)
+ 
+}else if (pilih==="persegi panjang") {
+var p= prompt("Masukan panjang:")
+var l= prompt("masukan lebar:")
+var hasil=p*l
+ document.write( "<b>persegi panjang</b> <br>")
+ document.write( "Masukan panjang: ", p,"<br>")
+ document.write( "Masukan lebar:", l,"<br>")
+ document.write( "Hasil Menghitung L=p x l=" ,hasil)
+ 
+}else if (pilih==="segitiga") {
+var a= prompt("Masukan alas:")
+var t= prompt("Masukan tinggi:")
+var hasil=1/2*a*t
+ document.write( "<b> segitiga</b> <br>")
+ document.write( " Masukan alas: ", a,"<br>")
+ document.write( " Masukan tinggi:", t,"<br>")
+ document.write( "Hasil Menghitung L=1/2 x a x t =" ,hasil)
+
+} else if (pilih==="jajar genjang") {
+var a= prompt("Masukan alas:")
+var t= prompt("Masukan tinggi:")
+var hasil=a*t
+ document.write( "<b> jajar genjang</b> <br>")
+ document.write( " Masukan alas: ", a,"<br>")
+ document.write( " Masukan tinggi:",t,"<br>")
+ document.write( "Hasil Menghitung  L=a x t =" ,hasil)
+
+
+ 
+}else alert("hasil tidak ditemukan")  
+
+</script> 
+</body>
+</html>
